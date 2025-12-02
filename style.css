@@ -1,0 +1,149 @@
+/* --- Global Styles --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f9; /* Light gray background */
+    color: #333; /* Dark gray text */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+a {
+    color: #007bff; /* Primary link color */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* --- Header & Navigation --- */
+.main-header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    border-bottom: #007bff 3px solid;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.main-header li {
+    padding: 0 15px;
+}
+
+.main-header a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* --- Hero Section --- */
+.hero {
+    background: #e2e6ea; /* Lighter background for the intro */
+    text-align: center;
+    padding: 80px 0;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.tagline {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.social-links a {
+    font-size: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+}
+
+/* --- Projects Grid --- */
+#projects {
+    padding: 40px 0;
+    text-align: center;
+}
+
+#projects h3 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.projects-grid .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.project-card h4 {
+    color: #333;
+    margin-top: 0;
+}
+
+.btn-link {
+    display: inline-block;
+    padding: 8px 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    background: #007bff;
+    color: #fff;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-link.secondary {
+    background: #6c757d; /* Gray color for secondary link */
+}
+
+.btn-link:hover {
+    background: #0056b3;
+}
+
+/* --- Footer --- */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
